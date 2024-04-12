@@ -52,12 +52,19 @@ namespace lab6
 
         private void button1_Click(object sender, EventArgs e)
         {
-            form1.X = Int32.Parse(textBox1.Text);
-            form1.Y = Int32.Parse(textBox2.Text);
-            form1.dydelfy = Int32.Parse(textBox3.Text);
-            form1.krokodyle = Int32.Parse(textBox4.Text);
-            form1.czas = Int32.Parse(textBox5.Text);
-            Close();
+            if (Int32.Parse(textBox1.Text) <= 10 && Int32.Parse(textBox2.Text) <= 10 && Int32.Parse(textBox3.Text) + Int32.Parse(textBox4.Text) <= Int32.Parse(textBox1.Text) * Int32.Parse(textBox2.Text) && Int32.Parse(textBox5.Text) > 0)
+            {
+                form1.X = Int32.Parse(textBox1.Text);
+                form1.Y = Int32.Parse(textBox2.Text);
+                form1.dydelfy = Int32.Parse(textBox3.Text);
+                form1.krokodyle = Int32.Parse(textBox4.Text);
+                form1.czas = Int32.Parse(textBox5.Text);
+                Close();
+            }
+            else
+            {
+                label7.Text = "Podano niepoprawne dane";
+            }
         }
     }
 }
