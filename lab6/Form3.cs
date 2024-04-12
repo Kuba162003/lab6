@@ -27,31 +27,36 @@ namespace lab6
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            form1.X = Int32.Parse(textBox1.Text);
+            
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            form1.Y = Int32.Parse(textBox2.Text);
+            
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-            form1.dydelfy = Int32.Parse(textBox3.Text);
+            
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
-            form1.krokodyle = Int32.Parse(textBox4.Text);
+            
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
-            form1.czas = Int32.Parse(textBox5.Text);
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            form1.X = Int32.Parse(textBox1.Text);
+            form1.Y = Int32.Parse(textBox2.Text);
+            form1.dydelfy = Int32.Parse(textBox3.Text);
+            form1.krokodyle = Int32.Parse(textBox4.Text);
+            form1.czas = Int32.Parse(textBox5.Text);
             Close();
         }
     }

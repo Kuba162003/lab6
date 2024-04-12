@@ -27,6 +27,19 @@ namespace lab6
                 timer.Stop();
 
                 label1.Text = "PRZEGRAŁEŚ :( czas się skończył";
+                end_game = true;
+                foreach (PictureBox picture in nothing)
+                {
+                    PictureBox_Click_Nothing(picture, EventArgs.Empty);
+                }
+                foreach (PictureBox picture in crocodiles)
+                {
+                    PictureBox_Click_Crocodile(picture, EventArgs.Empty);
+                }
+                foreach (PictureBox picture in dydelfs)
+                {
+                    PictureBox_Click_Dydelf(picture, EventArgs.Empty);
+                }
             }
         }
 
