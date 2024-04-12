@@ -93,6 +93,10 @@ namespace lab6
                 {
                     PictureBox_Click_Dydelf(picture, EventArgs.Empty);
                 }
+                foreach (PictureBox picture in crocodiles)
+                {
+                    PictureBox_Click_Crocodile(picture, EventArgs.Empty);
+                }
             }
 
         }
